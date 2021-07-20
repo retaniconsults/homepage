@@ -1,0 +1,32 @@
+{% extends './layout/ui-base.twig' %}
+
+{% block content %}
+<div class="swiper-container is-invisible" id="about">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide site-intro ">
+
+            <ul class="contact-infos small-text">
+              <li><a href="mailto:plexar@info.com">info@retaniconsults.com</a></li>
+            </ul>
+
+            <ul class="socials">
+              <li><a href="http://twitter.com">Twitter</a></li>
+            </ul>
+
+
+           <div class="about-text">
+           {{ page.body }}
+           </div>
+
+
+          </div>
+        </div>
+        <!-- /.swiper-wrapper -->
+
+      </div>
+      <!-- /.swiper-container -->
+
+    </div>
+{% endblock %}

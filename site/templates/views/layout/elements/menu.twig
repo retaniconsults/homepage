@@ -1,0 +1,38 @@
+<header class="nav-menu">
+	<a id="close-control" href="#">
+		<div class="close-control">
+			<div class="stroke"></div>
+			<div class="stroke"></div>
+			<div class="clearfix"></div>
+		</div>
+	</a>
+
+	<div class="logo hidden-xs">
+		<a class="logo_link" href="{{homepage.url}}">
+			<img src="{{config.urls.templates }}assets/images/logo.png" alt="Okeowo Aderemi">
+		</a>
+	</div>
+	<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="{{homepage.url}}">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="route nav-link" href="{{homepage.url}}#about-page-ui">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="route nav-link" href="{{homepage.url}}#project-page">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{{pages.get('/articles').url}}">Articles</a>
+		</li>
+
+	</ul>
+</header>
+
+<a onclick="ProjectWebsite.openMenu('header')" id="mobile-menu" class="block">
+	<div class="mobile-menu hidden-lg hidden-md hidden-sm">
+		<div class="menu-line"></div>
+		<div class="menu-line"></div>
+		<div class="menu-line"></div>
+	</div>
+</a>
