@@ -24,13 +24,14 @@ $sidebar = $page->sidebar;
 
 // We refer to our homepage a few times in our site, so we preload a copy 
 // here in a $homepage variable for convenience. 
-$homepage = $pages->get('/'); 
+$homepage = $pages->get('/');
+$fullMenu = $homepage->children()->prepend($homepage);
 
 
 // Include shared functions (if any)
 include_once("./_func.php");
 
-$menu = renderNavTree($homepage->children(),0,null, 'navbar-nav main-menu');
+$menu = renderNavTree($fullMenu,0,null, 'navbar-nav main-menu');
 
 
 // Set to the view
