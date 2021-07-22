@@ -43,6 +43,10 @@ if(!defined("PROCESSWIRE")) die();
 $config->useFunctionsAPI = true;
 
 
+// Set the prepend file
+$config->prependTemplateFile = "_init.php";
+
+
 /*** INSTALLER CONFIG ********************************************************************/
 
 
